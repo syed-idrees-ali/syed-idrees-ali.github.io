@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Idrees Ali | Data Analytics & Management Portfolio</title>
+    <meta name="description" content="Professional portfolio of Syed Idrees Ali, showcasing data analytics, Power BI dashboards, SQL databases, and management science projects.">
+    <meta name="keywords" content="Syed Idrees Ali, Data Analyst Portfolio, Power BI Dashboard, SQL, Business Analytics, GIKI">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid #334155;
+        }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.05em; }
+        .subtitle { color: var(--accent); font-size: 1.2rem; font-weight: 600; margin-bottom: 1rem; }
+        .bio { color: var(--text-muted); max-width: 600px; margin: 0 auto 1.5rem auto; }
+        
+        .social-links a {
+            color: var(--text-main);
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+        .social-links a:hover { color: var(--accent); }
+
+        /* Skills Tags */
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        .tag {
+            background: #273549;
+            color: var(--accent);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Projects Section */
+        .projects-section { margin-top: 4rem; }
+        h2 { font-size: 1.8rem; margin-bottom: 2rem; border-left: 4px solid var(--accent); padding-left: 10px; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        @media (min-width: 768px) { .grid { grid-template-columns: 1fr 1fr; } }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid #334155;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            border-color: var(--accent);
+        }
+        .card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+        .card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
+        
+        .project-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+        .tools { font-size: 0.8rem; color: var(--accent); font-weight: 600; }
+        .view-link {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .view-link:hover { text-decoration: underline; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 5rem;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Syed Idrees Ali</h1>
+            <div class="subtitle">Data Analyst & Management Professional</div>
+            <p class="bio">
+                Specializing in transforming complex datasets into actionable business intelligence. Experienced in supply chain analytics, interactive dashboards, and database management.
+            </p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/YOUR-USERNAME" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/YOUR-USERNAME" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="skills">
+                <span class="tag">Power BI</span>
+                <span class="tag">SQL (PostgreSQL)</span>
+                <span class="tag">Advanced Excel</span>
+                <span class="tag">Kaggle Datasets</span>
+                <span class="tag">Supply Chain Analytics</span>
+            </div>
+        </header>
+
+        <section class="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <div>
+                        <h3>Interactive Sales & Revenue Dashboard</h3>
+                        <p>An interactive Power BI dashboard tracking multi-year corporate sales data. Features advanced data modeling, DAX measures, and dynamic KPI tracking to identify high-margin regions.</p>
+                    </div>
+                    <div class="project-meta">
+                        <span class="tools">Power BI / Excel</span>
+                        <a href="#" class="view-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <h3>SQL Database Case Study</h3>
+                        <p>Developed a relational database schema using PostgreSQL to analyze transactional data from Kaggle. Optimized query performance using indexing and structured complex subqueries.</p>
+                    </div>
+                    <div class="project-meta">
+                        <span class="tools">PostgreSQL / pgAdmin</span>
+                        <a href="#" class="view-link">View Code <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <h3>Inventory Optimization Model</h3>
+                        <p>An Excel-based analytical tool implementing Economic Order Quantity (EOQ) and safety stock calculations to optimize supply chain networks and reduce holding costs.</p>
+                    </div>
+                    <div class="project-meta">
+                        <span class="tools">Advanced Excel / Modeling</span>
+                        <a href="#" class="view-link">View Model <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <h3>Fresh n Fit Cups — Brand Analytics</h3>
+                        <p>Conceptualized market entry and demand forecasting models for a healthy snack start-up, bridging business strategy with data-driven decision making.</p>
+                    </div>
+                    <div class="project-meta">
+                        <span class="tools">Market Analysis</span>
+                        <a href="#" class="view-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Syed Idrees Ali. Built with clean code for fast Google search indexing.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
